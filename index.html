@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Badminton</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <!---------- Navbar ---------->
+    <header>
+      <nav
+        class="navbar navbar-expand-lg fixed-top"
+        style="background-color: rgba(0, 0, 0, 0.65)"
+      >
+        <div class="container">
+          <a class="navbar-brand heading" href="#">Badminton</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonials">Players</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" style="padding-left: 1%">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!---------- Home ---------->
+    <div
+      id="carouselExampleControls main"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="500">
+          <img
+            src="assets/bg2.jpg"
+            class="d-block w-100 slideshow-img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="1000">
+          <img
+            src="assets/img1.jpg"
+            class="d-block w-100 slideshow-img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="1500">
+          <img
+            src="assets/img2.jpg"
+            class="d-block w-100 slideshow-img"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="assets/img3.jpg"
+            class="d-block w-100 slideshow-img"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!---------- History ---------->
+    <section id="history">
+      <div class="container">
+        <div class="history_title" data-aos="fade-up">
+          <h2>HISTORY</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 aos-init aos-animate">
+            <img
+              src="assets/history.jpg"
+              class="img-fluid"
+              data-aos="fade-right"
+              data-aos-delay="500"
+            />
+          </div>
+          <div
+            class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center history_content `"
+          >
+            <p data-aos="fade-left" data-aos-delay="500">
+              The origin of badminton is supposed to be coming from ancient
+              China and Greece approximately 2000 years back, where players used
+              to play similar games called battledore and shuttlecock. A very
+              similar game, called 'Poona', was also played in India in the 18th
+              century.
+            </p>
+            <p data-aos="fade-left" data-aos-delay="500">
+              In the 1860s, it was later adopted by the British Army officers
+              sheltered in India, who later took it to England, where it gained
+              fame and success under the name 'Badminton'. The first world
+              governing body of badminton was established as IBF (International
+              Badminton Federation), which was later renamed to BWF (Badminton
+              World Federation) on 24 September 2006.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- About ---------->
+    <section id="about">
+      <div class="container">
+        <div class="about_head" data-aos="fade-up">
+          <h2>ABOUT</h2>
+        </div>
+        <div class="about_content">
+          <p data-aos="zoom-in-up" data-aos-delay="400">
+            Badminton is a racket sport played by either two opposing players
+            (singles) or two opposing pairs (doubles), who take positions on
+            opposite halves of a rectangular court that is divided by a net.
+            Players score points by striking a shuttlecock with their racket so
+            that it passes over the net and lands in their opponents' half of
+            the court. A rally ends once the shuttlecock has struck the ground,
+            and the shuttlecock may only be struck once by each side before it
+            passes over the net.
+          </p>
+          <p data-aos="zoom-in-up" data-aos-delay="400">
+            The shuttlecock (or shuttle) is a feathered projectile whose unique
+            aerodynamic properties cause it to fly differently from the balls
+            used in most racket sports; in particular, the feathers create much
+            higher drag, causing the shuttlecock to decelerate more rapidly than
+            a ball. Shuttlecocks have a much higher top speed, when compared to
+            other racket sports. As the shuttlecock flight is stubbornly
+            affected by wind, competitive badminton is always played indoors.
+            Badminton is also played outdoors as a casual recreational activity,
+            often as a garden or beach game.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Players ---------->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+        <div
+          class="testimonials-slider swiper"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/pv.webp" class="testimonial-img" alt="PV Sindhu" />
+                <h3>PV Sindhu</h3>
+                <p>
+                  Pusarla Venkata Sindhu is an Indian badminton player. Considered one of India's most successful sportspersons, Sindhu has won medals at various tournaments such as the Olympics and on the BWF circuit, including a gold at the 2019 World Championships.
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/saina.webp" class="testimonial-img" alt="Saina Nehwal" />
+                <h3>Saina Nehwal</h3>
+                <p>
+                  Saina Nehwal is an Indian professional badminton player. A former world no. 1, she has won 24 international titles, which includes ten Superseries titles. Although she reached the world's 2nd in 2009, it was only in 2015 that she was able to attain the world no. 1 ranking.
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/prakash.jpg" class="testimonial-img" alt="Prakash Padukone" />
+                <h3>Prakash Padukone</h3>
+                <p>
+                  Prakash Padukone is a former Indian badminton player. He was ranked World No. 1 in 1980; the same year he became the first Indian to win the All England Open Badminton Championships. He was awarded the Arjuna award in 1972 and the Padma Shri in 1982 by the Government of India.
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img
+                  src="assets/shrikanth.jpg"
+                  class="testimonial-img"
+                  alt="Shrikanth Kadambi"
+                />
+                <h3>Shrikanth Kadambi</h3>
+                <p>
+                  Srikanth Kidambi is an Indian badminton player. A former world no. 1, Kidambi was awarded the Padma Shri, India's fourth highest civilian award, in 2018. and the Arjuna award in 2015. In 2021, he became the first Indian to reach the World Championship final in the men's singles discipline.
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <img src="assets/lakshya.webp" class="testimonial-img" alt="Lakshya Sen" />
+                <h3>Lakshya Sen</h3>
+                <p>
+                  Lakshya Sen is an Indian badminton player. Sen is a former world junior no. 1. He has won gold medals at the 2018 Asian Junior Championships in the boys' singles and at the Summer Youth Olympics in the mixed team event.
+                </p>
+              </div>
+            </div>
+            <!-- End testimonial item -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!---------- Footer ---------->
+    <footer id="footer">
+      <div class="container">
+        <h6>Designed by <em><strong>Sakshi Bhende</strong></em></h6>
+      </div>
+    </footer>
+
+    <!---------- Script Files ---------->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+      new Swiper('.testimonials-slider', {
+        speed: 500,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+        slidesPerView: 'auto',
+        pagination: {
+          el: '.swiper-pagination',
+          type: 'bullets',
+          clickable: true
+        }
+      });    
+    </script>
+  </body>
+</html>
